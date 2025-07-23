@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
+   base: '/p002/', 
   plugins: [react()],
     server: {port: 2006}
 })

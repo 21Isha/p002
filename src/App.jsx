@@ -1,35 +1,65 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reatLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+   <div className='dept'> 
+computer science engineering<br/>
+<label className='sup'> Kasaraneni Isha
+  </label>
+   </div>
+   
   )
 }
 
 export default App
+import React, { Component } from 'react';
+import './Myapp.css'
+class Myapp extends Component {
+    render() {
+        return (
+            <div className='myinfo'>
+                <img className='photo' src='/profile pic.png' alt='photo'/><br></br>
+                <table>
+                    <tr>
+                        <td><label className='deot'>Name:</label></td>
+            
+                       <td><label>Kasaraneni Isha</label><br></br></td> 
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label className='deot'>program:</label></td>
+                       <td><label1>B.tech...cse</label1><br></br></td> 
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label className='deot'>Mobile.no:</label></td>
+                       <td><label>9492328888</label><br></br></td> 
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label className='deot'>Email id:</label></td>
+                       <td><label>2400032493@kluniversity.in.com</label><br></br></td> 
+                    </tr>
+                    <tr>
+                        <td> <label className='deot'>course: </label></td>
+                            <td> <label> front end development frame works</label></td>
+                            
+                    </tr>
+                </table>
+                    
+            
+              
+              
+            </div>
+        );
+    }
+}
+
+export default Myapp;
